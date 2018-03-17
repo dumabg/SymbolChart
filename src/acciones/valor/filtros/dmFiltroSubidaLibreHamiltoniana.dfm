@@ -1,0 +1,2 @@
+inherited FiltroSubidaLibreHamiltoniana: TFiltroSubidaLibreHamiltoniana
+end

@@ -1,0 +1,2 @@
+inherited FiltroCaenBajadaLibre: TFiltroCaenBajadaLibre
+end

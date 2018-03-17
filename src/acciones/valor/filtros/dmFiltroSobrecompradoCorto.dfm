@@ -1,0 +1,2 @@
+inherited FiltroSobrecompradoCorto: TFiltroSobrecompradoCorto
+end

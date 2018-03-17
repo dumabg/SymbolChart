@@ -1,0 +1,2 @@
+inherited FiltroBajadaAcumulacion: TFiltroBajadaAcumulacion
+end

@@ -1,0 +1,5 @@
+GRAFICO_ZOOM CURSOR "recursos\\cursor\\zoom.cur"
+GRAFICO_DIBUJAR_LINEA CURSOR "recursos\\cursor\\linea.cur"
+SCROLL_DER BITMAP "recursos\\bitmap\\grafico\\scroll der.bmp"
+SCROLL_IZQ BITMAP "recursos\\bitmap\\grafico\\scroll izq.bmp"
+

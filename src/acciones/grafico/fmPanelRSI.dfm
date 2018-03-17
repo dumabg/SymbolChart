@@ -1,0 +1,2 @@
+inherited fPanelRSI: TfPanelRSI
+end

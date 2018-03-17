@@ -1,0 +1,2 @@
+inherited FiltroEntornoAcumulativo: TFiltroEntornoAcumulativo
+end

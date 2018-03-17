@@ -1,0 +1,2 @@
+inherited FiltroCaidaLibreTecnica: TFiltroCaidaLibreTecnica
+end

@@ -1,0 +1,2 @@
+inherited FiltroSuelo: TFiltroSuelo
+end

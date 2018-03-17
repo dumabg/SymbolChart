@@ -1,0 +1,2 @@
+inherited FiltroEntornoDistributivo: TFiltroEntornoDistributivo
+end

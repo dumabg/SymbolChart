@@ -1,0 +1,2 @@
+inherited FiltroAcumulacionDobson: TFiltroAcumulacionDobson
+end

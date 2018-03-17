@@ -1,0 +1,2 @@
+inherited FiltroPerforacionCatastrofeBajista: TFiltroPerforacionCatastrofeBajista
+end

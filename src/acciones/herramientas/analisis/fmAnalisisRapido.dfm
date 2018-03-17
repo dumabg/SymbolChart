@@ -1,0 +1,692 @@
+inherited fAnalisisRapido: TfAnalisisRapido
+  BorderIcons = [biSystemMenu, biMaximize]
+  BorderStyle = bsSizeToolWin
+  Caption = 'An'#225'lisis r'#225'pido'
+  ClientHeight = 481
+  ClientWidth = 897
+  FormStyle = fsStayOnTop
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnResize = FormResize
+  ExplicitWidth = 905
+  ExplicitHeight = 507
+  PixelsPerInch = 96
+  TextHeight = 13
+  object ScrollBox: TScrollBox
+    Left = 0
+    Top = 36
+    Width = 897
+    Height = 408
+    Align = alClient
+    Color = clWhite
+    ParentColor = False
+    TabOrder = 1
+    TabStop = True
+    OnMouseWheel = ScrollBoxMouseWheel
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 897
+    Height = 36
+    Align = alTop
+    TabOrder = 0
+    object AnalisisToolbar: TSpTBXToolbar
+      AlignWithMargins = True
+      Left = 6
+      Top = 6
+      Width = 885
+      Height = 24
+      Margins.Left = 5
+      Margins.Top = 5
+      Margins.Right = 5
+      Margins.Bottom = 5
+      Align = alClient
+      BorderStyle = bsNone
+      ChevronHint = 'M'#225's botones|'
+      ChevronMoveItems = False
+      CloseButton = False
+      FullSize = True
+      ProcessShortCuts = True
+      Resizable = False
+      TabOrder = 0
+      Caption = 'AnalisisToolbar'
+      Customizable = False
+      MenuBar = True
+    end
+  end
+  object PanelPie: TFlowPanel
+    Left = 0
+    Top = 460
+    Width = 897
+    Height = 21
+    Align = alBottom
+    AutoSize = True
+    BevelOuter = bvNone
+    TabOrder = 3
+    object Panel3: TPanel
+      Left = 0
+      Top = 0
+      Width = 123
+      Height = 21
+      AutoSize = True
+      Color = 16056308
+      Padding.Left = 3
+      Padding.Top = 3
+      Padding.Right = 5
+      Padding.Bottom = 3
+      ParentBackground = False
+      TabOrder = 0
+      object lNumInicioCiclo: TLabel
+        Left = 109
+        Top = 4
+        Width = 8
+        Height = 13
+        Caption = '?'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label1: TLabel
+        Left = 24
+        Top = 4
+        Width = 81
+        Height = 13
+        Caption = 'Inicio de ciclo'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clGreen
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object iLargo: TImage
+        Left = 4
+        Top = 6
+        Width = 17
+        Height = 10
+        AutoSize = True
+        Picture.Data = {
+          07544269746D6170FE040000424DFE0400000000000036040000280000001100
+          00000A0000000100080000000000C8000000C30E0000C30E0000000100000001
+          0000007B000000DE000052FF000000FF080000BD290000FF2900ADFF29004A4A
+          4A0063B563008C8C8C0052FFAD00ADFFAD00FF00FF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0000000C0C0000000000000000
+          00000000000C0C0000000C000B0B0B06060A0A020501010101070C0000000C0C
+          000B0303030303050103010104070C0000000C0C0C0006030303050103010104
+          070C0C0000000C0C0C0C000603050103010104070C0C0C0000000C0C0C0C0C00
+          050103010104070C0C0C0C0000000C0C0C0C0C0C000A010104070C0C0C0C0C00
+          00000C0C0C0C0C0C0C000104070C0C0C0C0C0C0000000C0C0C0C0C0C0C0C0809
+          0C0C0C0C0C0C0C000000}
+        Transparent = True
+      end
+    end
+    object Panel4: TPanel
+      Left = 123
+      Top = 0
+      Width = 140
+      Height = 21
+      AutoSize = True
+      Color = 16056308
+      Padding.Left = 5
+      Padding.Top = 3
+      Padding.Right = 5
+      Padding.Bottom = 3
+      ParentBackground = False
+      TabOrder = 1
+      object lNumInicioCicloVirtual: TLabel
+        Left = 126
+        Top = 4
+        Width = 8
+        Height = 13
+        Caption = '?'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label4: TLabel
+        Left = 24
+        Top = 4
+        Width = 96
+        Height = 13
+        Caption = 'Inicio de ciclo virtual'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clGreen
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+      end
+      object Image1: TImage
+        Left = 6
+        Top = 6
+        Width = 17
+        Height = 10
+        AutoSize = True
+        Picture.Data = {
+          07544269746D6170FE040000424DFE0400000000000036040000280000001100
+          00000A0000000100080000000000C8000000C30E0000C30E0000000100000001
+          0000007B000000DE000052FF000000FF080000BD290000FF2900ADFF29004A4A
+          4A0063B563008C8C8C0052FFAD00ADFFAD00FF00FF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF000C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0000000C0C0000000000000000
+          00000000000C0C0000000C000B0B0B06060A0A020501010101070C0000000C0C
+          000B0303030303050103010104070C0000000C0C0C0006030303050103010104
+          070C0C0000000C0C0C0C000603050103010104070C0C0C0000000C0C0C0C0C00
+          050103010104070C0C0C0C0000000C0C0C0C0C0C000A010104070C0C0C0C0C00
+          00000C0C0C0C0C0C0C000104070C0C0C0C0C0C0000000C0C0C0C0C0C0C0C0809
+          0C0C0C0C0C0C0C000000}
+        Transparent = True
+      end
+    end
+    object Panel5: TPanel
+      Left = 263
+      Top = 0
+      Width = 70
+      Height = 21
+      AutoSize = True
+      Color = 16056308
+      Padding.Left = 5
+      Padding.Top = 3
+      Padding.Right = 5
+      Padding.Bottom = 3
+      ParentBackground = False
+      TabOrder = 2
+      object Label2: TLabel
+        Left = 6
+        Top = 4
+        Width = 45
+        Height = 13
+        Caption = 'Mantener'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clGreen
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+      end
+      object lNumMantener: TLabel
+        Left = 56
+        Top = 4
+        Width = 8
+        Height = 13
+        Caption = '?'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+    end
+    object Panel2: TPanel
+      Left = 333
+      Top = 0
+      Width = 33
+      Height = 21
+      AutoSize = True
+      Color = 16056308
+      Padding.Left = 5
+      Padding.Top = 3
+      Padding.Right = 5
+      Padding.Bottom = 3
+      ParentBackground = False
+      TabOrder = 3
+      object Label5: TLabel
+        Left = 6
+        Top = 4
+        Width = 6
+        Height = 13
+        Caption = '='
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clGreen
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+      end
+      object lTotalLargos: TLabel
+        Left = 19
+        Top = 4
+        Width = 8
+        Height = 13
+        Caption = '?'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clGreen
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+    end
+    object Panel6: TPanel
+      Left = 366
+      Top = 0
+      Width = 159
+      Height = 21
+      AutoSize = True
+      Color = 16053503
+      Padding.Left = 5
+      Padding.Top = 3
+      Padding.Right = 5
+      Padding.Bottom = 3
+      ParentBackground = False
+      TabOrder = 4
+      object iCorto: TImage
+        Left = 6
+        Top = 6
+        Width = 15
+        Height = 10
+        AutoSize = True
+        Picture.Data = {
+          07544269746D6170D6040000424DD60400000000000036040000280000000F00
+          00000A0000000100080000000000A0000000D30E0000D30E0000000100000001
+          00000000C0004040FF000000FF000000FF000000C0000000FF004747F1000000
+          4000000080008C8C8C004545E1001F1FF900FF00FF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF000C0C0C0C0C0C08080C0C0C0C0C0C0C000C0C0C0C0C070401000C0C0C0C0C
+          0C000C0C0C0C070401010A000C0C0C0C0C000C0C0C07040101030105000C0C0C
+          0C000C0C070401010301050306000C0C0C000C0704010103010503030306000C
+          0C000704010103010503030303030B000C00070101010105020A0A06060B0B0B
+          00000C000000000000000000000000000C000C0C0C0C0C0C0C0C0C0C0C0C0C0C
+          0C00}
+        Transparent = True
+      end
+      object Label3: TLabel
+        Left = 27
+        Top = 4
+        Width = 114
+        Height = 13
+        Caption = 'Primera advertencia'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clRed
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object lNumPrimeraAdv: TLabel
+        Left = 145
+        Top = 4
+        Width = 8
+        Height = 13
+        Caption = '?'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+    end
+    object Panel7: TPanel
+      Left = 525
+      Top = 0
+      Width = 169
+      Height = 21
+      AutoSize = True
+      Color = 16053503
+      Padding.Left = 5
+      Padding.Top = 3
+      Padding.Right = 5
+      Padding.Bottom = 3
+      ParentBackground = False
+      TabOrder = 5
+      object Image2: TImage
+        Left = 6
+        Top = 6
+        Width = 15
+        Height = 10
+        AutoSize = True
+        Picture.Data = {
+          07544269746D6170D6040000424DD60400000000000036040000280000000F00
+          00000A0000000100080000000000A0000000D30E0000D30E0000000100000001
+          00000000C0004040FF000000FF000000FF000000C0000000FF004747F1000000
+          4000000080008C8C8C004545E1001F1FF900FF00FF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+          FF000C0C0C0C0C0C08080C0C0C0C0C0C0C000C0C0C0C0C070401000C0C0C0C0C
+          0C000C0C0C0C070401010A000C0C0C0C0C000C0C0C07040101030105000C0C0C
+          0C000C0C070401010301050306000C0C0C000C0704010103010503030306000C
+          0C000704010103010503030303030B000C00070101010105020A0A06060B0B0B
+          00000C000000000000000000000000000C000C0C0C0C0C0C0C0C0C0C0C0C0C0C
+          0C00}
+        Transparent = True
+      end
+      object lAdvVir: TLabel
+        Left = 26
+        Top = 4
+        Width = 125
+        Height = 13
+        Caption = 'Primera advertencia virtual'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clRed
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+      end
+      object lNumPrimeraAdvVirtual: TLabel
+        Left = 155
+        Top = 4
+        Width = 8
+        Height = 13
+        Caption = '?'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+    end
+    object Panel8: TPanel
+      Left = 694
+      Top = 0
+      Width = 82
+      Height = 21
+      AutoSize = True
+      Color = 16053503
+      Padding.Left = 5
+      Padding.Top = 3
+      Padding.Right = 5
+      Padding.Bottom = 3
+      ParentBackground = False
+      TabOrder = 6
+      object lAdv: TLabel
+        Left = 6
+        Top = 4
+        Width = 57
+        Height = 13
+        Caption = 'Advertencia'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clRed
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+      end
+      object lNumAdv: TLabel
+        Left = 68
+        Top = 4
+        Width = 8
+        Height = 13
+        Caption = '?'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+    end
+    object Panel9: TPanel
+      Left = 776
+      Top = 0
+      Width = 33
+      Height = 21
+      AutoSize = True
+      Color = 16053503
+      Padding.Left = 5
+      Padding.Top = 3
+      Padding.Right = 5
+      Padding.Bottom = 3
+      ParentBackground = False
+      TabOrder = 7
+      object Label7: TLabel
+        Left = 6
+        Top = 4
+        Width = 6
+        Height = 13
+        Caption = '='
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clRed
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+      end
+      object lTotalCortos: TLabel
+        Left = 19
+        Top = 4
+        Width = 8
+        Height = 13
+        Caption = '?'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clRed
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+    end
+  end
+  object pBarra: TPanel
+    Left = 0
+    Top = 444
+    Width = 897
+    Height = 16
+    Align = alBottom
+    BevelOuter = bvNone
+    TabOrder = 2
+    object pA: TPanel
+      Left = 393
+      Top = 1
+      Width = 80
+      Height = 14
+      Caption = 'A'
+      Color = clRed
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 5
+    end
+    object pPAV: TPanel
+      Left = 313
+      Top = 1
+      Width = 80
+      Height = 14
+      Caption = 'PAV'
+      Color = clRed
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 4
+    end
+    object pPA: TPanel
+      Left = 234
+      Top = 1
+      Width = 80
+      Height = 14
+      Caption = 'PA'
+      Color = clRed
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 3
+    end
+    object pM: TPanel
+      Left = 153
+      Top = 1
+      Width = 80
+      Height = 14
+      Caption = 'M'
+      Color = clGreen
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 2
+    end
+    object pICV: TPanel
+      Left = 79
+      Top = 1
+      Width = 80
+      Height = 14
+      Caption = 'ICV'
+      Color = clGreen
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 1
+    end
+    object pIC: TPanel
+      Left = 1
+      Top = 1
+      Width = 80
+      Height = 14
+      Caption = 'IC'
+      Color = clGreen
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentBackground = False
+      ParentFont = False
+      TabOrder = 0
+    end
+  end
+end

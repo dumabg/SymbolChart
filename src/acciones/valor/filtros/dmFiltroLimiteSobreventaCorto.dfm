@@ -1,0 +1,2 @@
+inherited FiltroLimiteSobreventaCorto: TFiltroLimiteSobreventaCorto
+end

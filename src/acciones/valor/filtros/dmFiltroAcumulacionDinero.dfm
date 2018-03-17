@@ -1,0 +1,2 @@
+inherited FiltroAcumulacionDinero: TFiltroAcumulacionDinero
+end

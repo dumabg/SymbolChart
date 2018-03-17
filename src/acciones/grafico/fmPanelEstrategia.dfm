@@ -1,0 +1,2 @@
+inherited frPanelEstrategia: TfrPanelEstrategia
+end

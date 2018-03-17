@@ -1,0 +1,2 @@
+inherited FiltroSubenSubidaLibre: TFiltroSubenSubidaLibre
+end

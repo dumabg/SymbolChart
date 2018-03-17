@@ -1,0 +1,2 @@
+inherited FiltroNeutral: TFiltroNeutral
+end

@@ -1,0 +1,8 @@
+*.pas text
+*.dfm text
+*.inc text
+*.RC text
+*.dpr text
+*.bmp binary
+*.cur binary
+*.md text

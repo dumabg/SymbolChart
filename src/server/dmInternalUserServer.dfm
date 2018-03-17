@@ -1,0 +1,2 @@
+inherited InternalUserServer: TInternalUserServer
+end

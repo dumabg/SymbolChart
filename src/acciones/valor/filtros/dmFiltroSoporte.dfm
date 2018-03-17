@@ -1,0 +1,2 @@
+inherited FiltroSoporte: TFiltroSoporte
+end

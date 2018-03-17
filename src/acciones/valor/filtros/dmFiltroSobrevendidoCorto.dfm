@@ -1,0 +1,2 @@
+inherited FiltroSobrevendidoCorto: TFiltroSobrevendidoCorto
+end

@@ -1,0 +1,2 @@
+inherited FiltroResistencia: TFiltroResistencia
+end
